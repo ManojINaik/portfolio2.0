@@ -1,0 +1,57 @@
+import Image from "next/image"
+import { Badge } from "../../shadcn/Badge";
+import CardWrapper from "../card-wrapper";
+
+const InterviewSystemCard = () => {
+  return (
+    <CardWrapper>
+      <div className="relative h-full flex flex-col justify-between gap-2 py-3 sm:py-4 px-4 sm:px-6 overflow-hidden">
+        <div className="relative flex-1 flex items-center justify-center">
+          <div className="relative h-[85%] w-[90%] rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src={"https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2940&auto=format&fit=crop"}
+              alt={"Professional interview setup"}
+              fill
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+                borderRadius: "8px"
+              }}
+            />
+          </div>
+        </div>
+        <div className="flex flex-col items-start gap-1">
+          <h4 className="text-xs font-medium opacity-80 uppercase flex flex-wrap gap-2 items-center">
+            <span>Hackathon — 2nd Runner-up</span>
+          </h4>
+          <div className="w-full flex gap-2 items-center">
+            <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
+              AI-Driven Interview System
+            </h1>
+          </div>
+          <div className="flex gap-2 flex-wrap mt-1">
+            <Badge variant="default" className="text-xs">
+              Next.js
+            </Badge>
+            <Badge variant="default" className="text-xs">
+              Gemini API
+            </Badge>
+            <Badge variant="default" className="text-xs">
+              Clerk
+            </Badge>
+            <Badge variant="default" className="text-xs">
+              Real-time Processing
+            </Badge>
+          </div>
+          <div className="mt-2 text-xs opacity-80">
+            <a href="https://github.com/ManojINaik/Devops" target="_blank" rel="noopener noreferrer" className="underline">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </CardWrapper>
+  )
+}
+
+export default InterviewSystemCard 

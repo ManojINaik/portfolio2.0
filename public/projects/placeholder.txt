@@ -1,0 +1,7 @@
+This directory contains project images for:
+- farmers-gateway.jpg
+- interview-system.jpg
+- learning-platform.jpg
+- ip-capture.jpg
+
+Please add images with these filenames to make the project cards display correctly. 
