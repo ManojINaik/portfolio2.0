@@ -26,7 +26,7 @@ const FarmersGatewayCard = () => {
           </h4>
           <div className="w-full flex gap-2 items-center">
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
-              Farmer's Gateway
+              Farmer&apos;s Gateway
             </h1>
           </div>
           <div className="flex gap-2 flex-wrap mt-1">

@@ -38,7 +38,7 @@ const Download = () => {
     return () => {
       destroyLottie();
     };
-  }, [isLightMode]);
+  }, [isLightMode, getLottie]);
 
   const lottieHover = async () => {
     const lot = await import("lottie-web");

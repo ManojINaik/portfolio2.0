@@ -38,7 +38,7 @@ const MoonIcon = () => {
     return () => {
       destroyLottie();
     };
-  }, [isLightMode, resolvedTheme]);
+  }, [isLightMode, resolvedTheme, getLottie]);
 
   const lottieHover = async () => {
     const lot = await import("lottie-web");
