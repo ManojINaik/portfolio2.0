@@ -15,21 +15,21 @@ const jobsData: Job[] = [
   {
     role: "Open Source Contributor",
     company: "GitHub",
-    period: "Present",
-    description: "",
+    period: "2024-Present",
+    description: "Web dev & AI focus",
     link: "https://github.com/pulls?q=is%3Apr+author%3Amanojinaik+is%3Aclosed",
   },
   {
-    role: "Full Stack Developer (3 months)",
-    company: "Ukshati",
+    role: "Software Development Intern",
+    company: "Ukshati Technologies",
     period: "Feb–May 2025",
-    description: "Fullstack",
+    description: "IoT Dashboard & Arduino",
   },
   {
-    role: "Full Stack Intern",
-    company: "Samagra",
-    period: "2024",
-    description: "Fullstack",
+    role: "Full Stack Developer Intern",
+    company: "Samagra Technologies",
+    period: "Oct–Nov 2023",
+    description: "Next.js & FastAPI",
   },
 ];
 

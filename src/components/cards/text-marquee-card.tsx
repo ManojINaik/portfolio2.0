@@ -16,7 +16,7 @@ const TextMarqueeCard = () => {
                 margin: "auto"
               }}
             >
-              SOFTWARE <b className="ml-1.5">ENGINEER</b>{" "}
+              FULL-STACK <b className="ml-1.5">AI DEVELOPER</b>{" "}
               {Array(4)
                 .fill(0)
                 .map((_, index) => (
@@ -26,7 +26,7 @@ const TextMarqueeCard = () => {
                       alt="Star"
                       className="h-4 w-4 mx-2"
                     />{" "}
-                    SOFTWARE <b className="ml-1.5">ENGINEER</b>{" "}
+                    FULL-STACK <b className="ml-1.5">AI DEVELOPER</b>{" "}
                   </Fragment>
                 ))}
                 <img

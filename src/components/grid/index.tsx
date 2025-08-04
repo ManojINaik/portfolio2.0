@@ -22,7 +22,10 @@ import {
 	FarmersGatewayCard,
 	InterviewSystemCard,
 	LearningPlatformCard,
-	IPCaptureCard
+	IPCaptureCard,
+	ManimAnimationAgentCard,
+	EchoVerseAICard,
+	BoltHackathonCard
 } from "@/components/cards";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
@@ -182,7 +185,7 @@ const Grid = () => {
 						}}
 					>
 						<BlurFade delay={0.50}>
-							<FarmersGatewayCard />
+							<ManimAnimationAgentCard />
 						</BlurFade>
 					</div>
 					<div
@@ -193,7 +196,7 @@ const Grid = () => {
 						}}
 					>
 						<BlurFade delay={0.55}>
-							<InterviewSystemCard />
+							<EchoVerseAICard />
 						</BlurFade>
 					</div>
 					<div
@@ -204,7 +207,7 @@ const Grid = () => {
 						}}
 					>
 						<BlurFade delay={0.60}>
-							<LearningPlatformCard />
+							<BoltHackathonCard />
 						</BlurFade>
 					</div>
 					<div
@@ -215,7 +218,7 @@ const Grid = () => {
 						}}
 					>
 						<BlurFade delay={0.65}>
-							<IPCaptureCard />
+							<InterviewSystemCard />
 						</BlurFade>
 					</div>
 					<div
@@ -237,7 +240,7 @@ const Grid = () => {
 						}}
 					>
 						<BlurFade delay={0.75}>
-							<JobsCard />
+							<FarmersGatewayCard />
 						</BlurFade>
 					</div>
 				</ResponsiveGridLayout>

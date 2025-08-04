@@ -4,21 +4,22 @@ import CardWrapper from "@/components/cards/card-wrapper";
 
 const MyTechCard = () => {
   const stack = [
-    { name: "Python", icon: "/tech-icons/python.svg" },
+    { name: "Python", icon: "/tech-icons/Python.svg" },
     { name: "JavaScript", icon: "/tech-icons/javascript.svg" },
     { name: "TypeScript", icon: "/tech-icons/typescript.svg" },
     { name: "React", icon: "/tech-icons/reactjs.svg" },
     { name: "Next.js", icon: "/tech-icons/nextjs.svg" },
+    { name: "FastAPI", icon: "/tech-icons/fastapi.svg" },
     { name: "HTML5", icon: "/tech-icons/html5.svg" },
     { name: "CSS3", icon: "/tech-icons/css3.svg" },
-    { name: "MySQL", icon: "/tech-icons/mysql.svg" },
+    { name: "TailwindCSS", icon: "/tech-icons/tailwindcss.svg" },
+    { name: "MySQL", icon: "/tech-icons/MySQL.svg" },
     { name: "PHP", icon: "/tech-icons/php.svg" },
     { name: "C", icon: "/tech-icons/c.svg" },
-    { name: "FastAPI", icon: "/tech-icons/fastapi.svg" },
-    { name: "Express", icon: "/tech-icons/express.svg" },
-    { name: "VS Code", icon: "/tech-icons/vscode.svg" },
     { name: "Github", icon: "/tech-icons/github.svg" },
+    { name: "VS Code", icon: "/tech-icons/vscode.svg" },
     { name: "Vercel", icon: "/tech-icons/vercel.svg" },
+    { name: "Figma", icon: "/tech-icons/figma.svg" },
   ];
 
   return (
