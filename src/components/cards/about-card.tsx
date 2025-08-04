@@ -22,8 +22,8 @@ const AboutCard = () => {
           </div>
         </div>
 
-        <p className="dark:text-white text-slate-900 tracking-wide leading-6 text-xs sm:text-sm">
-          Recent Computer Science graduate specializing in full-stack AI applications. Proven expertise in Python (FastAPI) and TypeScript (Next.js) through award-winning hackathon projects and open-source contributions. Skilled in developing end-to-end solutions, from RAG systems to cloud-based deployments with Docker and GitHub Actions. Based in Mangalore, India.
+        <p className="dark:text-white text-slate-900 tracking-wide leading-relaxed text-xs sm:text-sm">
+          Computer Science graduate specializing in full-stack AI applications. Expert in Python, TypeScript, and modern web technologies. Award-winning developer with proven experience in hackathons and open-source projects.
         </p>
       </div>
     </CardWrapper>
