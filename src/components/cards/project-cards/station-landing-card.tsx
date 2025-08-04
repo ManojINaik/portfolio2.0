@@ -13,6 +13,7 @@ const StationLanding = () => {
               src={"https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop"}
               alt={"Modern financial dashboard interface"}
               fill
+              sizes="(max-width: 640px) 300px, 400px"
               style={{
                 objectFit: "cover",
                 objectPosition: "center",

@@ -1,16 +1,35 @@
+import React from "react";
 import CardWrapper from "@/components/cards/card-wrapper";
+import PullRequestIcon from "@/components/lottie-ui/pull-request-icon";
 import classNames from "classnames";
 
-const jobsData = [
-  {
-    role: "Full Stack Developer",
-    company: "Samagra Technologies",
-    date: "Oct 2023 - Nov 2023",
-  },
+interface Job {
+  role: string;
+  company: string;
+  period: string;
+  description: string;
+  link?: string;
+}
+
+const jobsData: Job[] = [
   {
     role: "Open Source Contributor",
-    company: "Remote",
-    date: "2023 - Present",
+    company: "GitHub",
+    period: "Present",
+    description: "",
+    link: "https://github.com/pulls?q=is%3Apr+author%3Amanojinaik+is%3Aclosed",
+  },
+  {
+    role: "Full Stack Developer (3 months)",
+    company: "Ukshati",
+    period: "Feb–May 2025",
+    description: "Fullstack",
+  },
+  {
+    role: "Full Stack Intern",
+    company: "Samagra",
+    period: "2024",
+    description: "Fullstack",
   },
 ];
 
@@ -18,10 +37,10 @@ const JobItem = ({
   job,
   active
 }: {
-  job: any;
+  job: Job;
   active?: boolean;
 }) => {
-  const { role, company, date} = job;
+  const { role, company, period, description, link } = job;
 
   return (
     <div
@@ -32,7 +51,7 @@ const JobItem = ({
           "block text-xs md:text-md md:hidden font-medium dark:text-white text-black",
           { 'opacity-35': !active, 'opacity-65': active }
         )}>
-          {date}
+          {period}
         </h5>
         <h1 className={classNames(
           "text-3xl md:text-4xl font-medium dark:text-white text-black text-left w-fit",
@@ -52,8 +71,24 @@ const JobItem = ({
           "hidden md:block text-xs lg:text-md font-medium dark:text-white text-black",
           { 'opacity-35': !active, 'opacity-65': active }
         )}>
-          {date}
+          {period}
         </h5>
+        <div className="flex items-center">
+          {description && (
+            <p className="text-opacity-50 text-white/70 dark:text-white/80">
+              {description}
+            </p>
+          )}
+          {link && (
+            <div className="ml-3">
+              <PullRequestIcon 
+                link={link} 
+                size="sm"
+                className="!h-8 !w-8"
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

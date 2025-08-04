@@ -18,9 +18,7 @@ const ResumeCard = () => {
             </h1>
           </div>
           <div className="flex gap-2 lg:gap-6 items-center">
-            <a href="/manojIshwarNaik_Resume.pdf" download>
-              <Download />
-            </a>
+            <Download />
             <a href="mailto:manojinaik@outlook.com">
               <SendIcon />
             </a>

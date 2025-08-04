@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Badge } from "../../shadcn/Badge";
 import CardWrapper from "../card-wrapper";
+import PullRequestIcon from "@/components/lottie-ui/pull-request-icon";
 
 const FarmersGatewayCard = () => {
   return (
@@ -12,6 +13,7 @@ const FarmersGatewayCard = () => {
               src={"https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=2940&auto=format&fit=crop"}
               alt={"Modern farming technology interface"}
               fill
+              sizes="(max-width: 640px) 250px, 350px"
               style={{
                 objectFit: "cover",
                 objectPosition: "center",
@@ -24,10 +26,11 @@ const FarmersGatewayCard = () => {
           <h4 className="text-xs font-medium opacity-80 uppercase flex flex-wrap gap-2 items-center">
             <span>Project</span>
           </h4>
-          <div className="w-full flex gap-2 items-center">
+          <div className="w-full flex gap-2 items-center justify-between">
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               Farmer&apos;s Gateway
             </h1>
+            <PullRequestIcon link="https://github.com/ManojINaik/Farmers-Gateway" />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">
@@ -46,15 +49,11 @@ const FarmersGatewayCard = () => {
               AI Integration
             </Badge>
           </div>
-          <div className="mt-2 text-xs opacity-80">
-            <a href="https://github.com/ManojINaik/Farmers-Gateway" target="_blank" rel="noopener noreferrer" className="underline">
-              View on GitHub
-            </a>
-          </div>
+          {/* Compact PR icon replaces verbose text link */}
         </div>
       </div>
     </CardWrapper>
   )
 }
 
-export default FarmersGatewayCard 
+export default FarmersGatewayCard

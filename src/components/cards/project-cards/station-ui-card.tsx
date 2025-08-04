@@ -12,6 +12,7 @@ const StationUI = () => {
               src={"https://images.unsplash.com/photo-1545235617-7a424c1a60cc?q=80&w=2880&auto=format&fit=crop"}
               alt={"Modern UI components and design system"}
               fill
+              sizes="(max-width: 640px) 200px, 300px"
               style={{
                 objectFit: "cover",
                 objectPosition: "center",
@@ -24,6 +25,7 @@ const StationUI = () => {
               src={"/projects/station-ui/checkbox.png"}
               alt={"Station UI assets example"}
               fill
+              sizes="115px"
               style={{
                 objectFit: "contain",
                 borderRadius: "8px",
@@ -35,6 +37,7 @@ const StationUI = () => {
               src={"/projects/station-ui/color.png"}
               alt={"Station UI assets example"}
               fill
+              sizes="115px"
               style={{
                 objectFit: "contain",
                 borderRadius: "8px",
@@ -46,6 +49,7 @@ const StationUI = () => {
               src={"/projects/station-ui/input.png"}
               alt={"Station UI assets example"}
               fill
+              sizes="343px"
               style={{
                 objectFit: "contain",
                 borderRadius: "8px",
@@ -57,6 +61,7 @@ const StationUI = () => {
               src={"/projects/station-ui/status-box.png"}
               alt={"Station UI assets example"}
               fill
+              sizes="332px"
               style={{
                 objectFit: "contain",
                 borderRadius: "8px",
@@ -68,6 +73,7 @@ const StationUI = () => {
               src={"/projects/station-ui/swap-from.png"}
               alt={"Station UI assets example"}
               fill
+              sizes="339px"
               style={{
                 objectFit: "contain",
                 borderRadius: "6px",

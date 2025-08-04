@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Badge } from "../../shadcn/Badge";
 import CardWrapper from "../card-wrapper";
+import PullRequestIcon from "@/components/lottie-ui/pull-request-icon";
 
 const IPCaptureCard = () => {
   return (
@@ -12,6 +13,7 @@ const IPCaptureCard = () => {
               src={"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2934&auto=format&fit=crop"}
               alt={"Network monitoring visualization"}
               fill
+              sizes="(max-width: 640px) 250px, 350px"
               style={{
                 objectFit: "cover",
                 objectPosition: "center",
@@ -24,10 +26,11 @@ const IPCaptureCard = () => {
           <h4 className="text-xs font-medium opacity-80 uppercase flex flex-wrap gap-2 items-center">
             <span>Project</span>
           </h4>
-          <div className="w-full flex gap-2 items-center">
+          <div className="w-full flex gap-2 items-center justify-between">
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               IP Capture Tool
             </h1>
+            <PullRequestIcon link="https://github.com/ManojINaik/IPCAPTURE/pulls" />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">
@@ -43,18 +46,11 @@ const IPCaptureCard = () => {
               Geolocation
             </Badge>
           </div>
-          <div className="mt-2 text-xs opacity-80">
-            <a href="https://github.com/ManojINaik/IPCAPTURE" target="_blank" rel="noopener noreferrer" className="underline mr-3">
-              View on GitHub
-            </a>
-            <a href="https://manojinaik.github.io/IPCAPTURE" target="_blank" rel="noopener noreferrer" className="underline">
-              Live Demo
-            </a>
-          </div>
+          {/* compact icon only, removed verbose links */}
         </div>
       </div>
     </CardWrapper>
   )
 }
 
-export default IPCaptureCard 
+export default IPCaptureCard

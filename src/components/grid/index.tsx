@@ -226,7 +226,7 @@ const Grid = () => {
 						}}
 					>
 						<BlurFade delay={0.70}>
-							<FarmersGatewayCard />
+							<LearningPlatformCard />
 						</BlurFade>
 					</div>
 					<div
@@ -237,7 +237,7 @@ const Grid = () => {
 						}}
 					>
 						<BlurFade delay={0.75}>
-							<InterviewSystemCard />
+							<JobsCard />
 						</BlurFade>
 					</div>
 				</ResponsiveGridLayout>

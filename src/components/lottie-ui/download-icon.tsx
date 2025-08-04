@@ -1,14 +1,19 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
 import InboxDownAnimation from "../../lottie/inbox-down/InboxDown.json";
 import InboxDownLightAnimation from "../../lottie/inbox-down/InboxDownLight.json";
 
 const Download = () => {
   const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const isLightMode = resolvedTheme === "light";
   const downloadContainer = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   async function getLottie() {
     const lot = await import("lottie-web");
@@ -33,12 +38,14 @@ const Download = () => {
   }
 
   useEffect(() => {
-    getLottie();
+    if (mounted) {
+      getLottie();
 
-    return () => {
-      destroyLottie();
-    };
-  }, [isLightMode, getLottie]);
+      return () => {
+        destroyLottie();
+      };
+    }
+  }, [mounted, isLightMode, getLottie]);
 
   const lottieHover = async () => {
     const lot = await import("lottie-web");
@@ -48,6 +55,18 @@ const Download = () => {
   const lottieLeave = async () => {
     const lot = await import("lottie-web");
     lot.default.stop("DownloadIcon");
+  }
+
+  if (!mounted) {
+    return (
+      <a
+        href="/manojIshwarNaik_Resume.pdf"
+        download
+        className="relative z-10"
+      >
+        <div className="h-10 w-10 opacity-50 hover:opacity-100 transition-opacity" />
+      </a>
+    );
   }
 
   return (

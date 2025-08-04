@@ -13,6 +13,7 @@ const AllianceLanding = () => {
               src={"https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=2802&auto=format&fit=crop"}
               alt={"Blockchain network visualization"}
               fill
+              sizes="(max-width: 640px) 300px, 400px"
               style={{
                 objectFit: "cover",
                 objectPosition: "center",

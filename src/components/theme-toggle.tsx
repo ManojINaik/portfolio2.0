@@ -4,15 +4,38 @@ import classNames from "classnames";
 import SunIcon from "./lottie-ui/sun-icon";
 import MoonIcon from "./lottie-ui/moon-icon";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 import CardWrapper from "./cards/card-wrapper";
 
 const ThemeToggle = () => {
   const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const isLightMode = resolvedTheme === "light";
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleTheme = () => {
     setTheme(isLightMode ? "dark" : "light");
   };
+
+  if (!mounted) {
+    return (
+      <CardWrapper>
+        <div className={classNames("relative h-full flex flex-col justify-center p-1")}>
+          <div className="flex items-center justify-around h-full">
+            <button className="relative flex items-center justify-center rounded-[24px] h-full w-2/4 z-10">
+              <div className="h-10 w-10 opacity-50" />
+            </button>
+            <button className="relative flex items-center justify-center rounded-[24px] h-full w-2/4 z-10">
+              <div className="h-10 w-10 opacity-50" />
+            </button>
+          </div>
+        </div>
+      </CardWrapper>
+    );
+  }
 
   return (
     <CardWrapper>

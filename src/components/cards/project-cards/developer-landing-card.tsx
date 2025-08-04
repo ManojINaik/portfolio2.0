@@ -13,6 +13,7 @@ const DeveloperLanding = () => {
               src={"https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop"}
               alt={"Developer coding environment"}
               fill
+              sizes="(max-width: 640px) 300px, 400px"
               style={{
                 objectFit: "cover",
                 objectPosition: "center",

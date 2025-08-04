@@ -12,6 +12,7 @@ const AboutCard = () => {
               alt="Manoj Naik"
               fill
               priority
+              sizes="(max-width: 640px) 64px, 96px"
             />
           </div>
           <div className="flex flex-col justify-center">
@@ -22,8 +23,7 @@ const AboutCard = () => {
         </div>
 
         <p className="dark:text-white text-slate-900 tracking-wide leading-6 text-xs sm:text-sm">
-          Results-driven Software Engineer with expertise in Full Stack Development, AI Applications, and Web Technologies.<br />
-          Currently based in Mangalore, India.
+          Computer Science graduate building full‑stack AI apps end‑to‑end. Strong in Python/FastAPI and TypeScript/Next.js with hackathon wins and open‑source impact. Experienced with RAG (FAISS), Docker, and CI/CD on GitHub Actions. Based in Mangalore, India.
         </p>
       </div>
     </CardWrapper>

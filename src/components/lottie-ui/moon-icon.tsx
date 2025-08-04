@@ -1,14 +1,19 @@
 "use client"
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
 import MoonAnimation from "../../lottie/moon/Moon.json";
 import MoonLightAnimation from "../../lottie/moon/MoonLight.json";
 
 const MoonIcon = () => {
   const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const isLightMode = resolvedTheme === "light";
   const moonIconContainer = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   async function getLottie() {
     const lot = await import("lottie-web");
@@ -33,12 +38,14 @@ const MoonIcon = () => {
   }
 
   useEffect(() => {
-    getLottie();
+    if (mounted) {
+      getLottie();
 
-    return () => {
-      destroyLottie();
-    };
-  }, [isLightMode, resolvedTheme, getLottie]);
+      return () => {
+        destroyLottie();
+      };
+    }
+  }, [mounted, isLightMode, resolvedTheme, getLottie]);
 
   const lottieHover = async () => {
     const lot = await import("lottie-web");
@@ -48,6 +55,14 @@ const MoonIcon = () => {
   const lottieLeave = async () => {
     const lot = await import("lottie-web");
     lot.default.stop("MoonIcon");
+  }
+
+  if (!mounted) {
+    return (
+      <div className="group/moon h-full w-full flex items-center justify-center">
+        <div className="h-10 w-10 opacity-50 group-hover/moon:opacity-100 transition-opacity" />
+      </div>
+    );
   }
 
   return (

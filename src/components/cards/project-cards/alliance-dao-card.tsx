@@ -13,6 +13,7 @@ const AllianceDao = () => {
               src={"https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2832&auto=format&fit=crop"}
               alt={"Alliance DAO visualization"}
               fill
+              sizes="(max-width: 640px) 300px, 400px"
               style={{
                 objectFit: "cover",
                 objectPosition: "center",

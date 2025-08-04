@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Badge } from "../../shadcn/Badge";
 import CardWrapper from "../card-wrapper";
+import PullRequestIcon from "@/components/lottie-ui/pull-request-icon";
 
 const LearningPlatformCard = () => {
   return (
@@ -12,6 +13,7 @@ const LearningPlatformCard = () => {
               src={"https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2932&auto=format&fit=crop"}
               alt={"Modern learning environment"}
               fill
+              sizes="(max-width: 640px) 250px, 350px"
               style={{
                 objectFit: "cover",
                 objectPosition: "center",
@@ -24,10 +26,11 @@ const LearningPlatformCard = () => {
           <h4 className="text-xs font-medium opacity-80 uppercase flex flex-wrap gap-2 items-center">
             <span>Project</span>
           </h4>
-          <div className="w-full flex gap-2 items-center">
+          <div className="w-full flex gap-2 items-center justify-between">
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               AI Learning Platform
             </h1>
+            <PullRequestIcon link="https://github.com/ManojINaik/Ai-learning/pulls" />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">
@@ -43,18 +46,11 @@ const LearningPlatformCard = () => {
               Adaptive Learning
             </Badge>
           </div>
-          <div className="mt-2 text-xs opacity-80">
-            <a href="https://github.com/ManojINaik/Ai-learning" target="_blank" rel="noopener noreferrer" className="underline mr-3">
-              View on GitHub
-            </a>
-            <a href="https://learningai.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline">
-              Live Demo
-            </a>
-          </div>
+          {/* Removed verbose text links in favor of a compact PR icon button */}
         </div>
       </div>
     </CardWrapper>
   )
 }
 
-export default LearningPlatformCard 
+export default LearningPlatformCard

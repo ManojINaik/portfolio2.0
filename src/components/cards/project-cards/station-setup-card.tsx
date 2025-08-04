@@ -13,6 +13,7 @@ const StationSetup = () => {
               src={"https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"}
               alt={"Modern setup and onboarding interface"}
               fill
+              sizes="(max-width: 640px) 300px, 400px"
               style={{
                 objectFit: "cover",
                 objectPosition: "center",

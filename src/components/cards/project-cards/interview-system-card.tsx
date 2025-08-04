@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Badge } from "../../shadcn/Badge";
 import CardWrapper from "../card-wrapper";
+import PullRequestIcon from "@/components/lottie-ui/pull-request-icon";
 
 const InterviewSystemCard = () => {
   return (
@@ -12,6 +13,7 @@ const InterviewSystemCard = () => {
               src={"https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2940&auto=format&fit=crop"}
               alt={"Professional interview setup"}
               fill
+              sizes="(max-width: 640px) 250px, 350px"
               style={{
                 objectFit: "cover",
                 objectPosition: "center",
@@ -24,10 +26,11 @@ const InterviewSystemCard = () => {
           <h4 className="text-xs font-medium opacity-80 uppercase flex flex-wrap gap-2 items-center">
             <span>Hackathon — 2nd Runner-up</span>
           </h4>
-          <div className="w-full flex gap-2 items-center">
+          <div className="w-full flex gap-2 items-center justify-between">
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               AI-Driven Interview System
             </h1>
+            <PullRequestIcon link="https://github.com/ManojINaik/Devops/pulls" />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">
@@ -43,15 +46,10 @@ const InterviewSystemCard = () => {
               Real-time Processing
             </Badge>
           </div>
-          <div className="mt-2 text-xs opacity-80">
-            <a href="https://github.com/ManojINaik/Devops" target="_blank" rel="noopener noreferrer" className="underline">
-              View on GitHub
-            </a>
-          </div>
         </div>
       </div>
     </CardWrapper>
   )
 }
 
-export default InterviewSystemCard 
+export default InterviewSystemCard
