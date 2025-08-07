@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Badge } from "../../shadcn/Badge";
 import CardWrapper from "../card-wrapper";
-import PullRequestIcon from "@/components/lottie-ui/pull-request-icon";
+import GithubIconButton from "../github-icon-button";
 
 const FarmersGatewayCard = () => {
   return (
@@ -30,7 +30,7 @@ const FarmersGatewayCard = () => {
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               Farmer&apos;s Gateway
             </h1>
-            <PullRequestIcon link="https://github.com/ManojINaik/Farmers-Gateway" />
+            <GithubIconButton href="https://github.com/ManojINaik/Farmers-Gateway" />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">

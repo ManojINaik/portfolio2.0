@@ -16,3 +16,4 @@ export { default as TextMarqueeCard } from "./text-marquee-card";
 export { default as BookMurudeshwarCard } from "./project-cards/book-murudeshwar-card";
 export { default as RoomsMurudeshwarCard } from "./project-cards/rooms-murudeshwar-card";
 export { default as MrRidersCard } from "./project-cards/mr-riders-card";
+export { default as GithubIconButton } from "./github-icon-button";

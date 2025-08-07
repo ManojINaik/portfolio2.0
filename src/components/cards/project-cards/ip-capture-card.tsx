@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Badge } from "../../shadcn/Badge";
 import CardWrapper from "../card-wrapper";
-import PullRequestIcon from "@/components/lottie-ui/pull-request-icon";
+import GithubIconButton from "../github-icon-button";
 
 const IPCaptureCard = () => {
   return (
@@ -30,7 +30,7 @@ const IPCaptureCard = () => {
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               IP Capture Tool
             </h1>
-            <PullRequestIcon link="https://github.com/ManojINaik/IPCAPTURE/pulls" />
+            <GithubIconButton href="https://github.com/ManojINaik/IPCAPTURE" />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">

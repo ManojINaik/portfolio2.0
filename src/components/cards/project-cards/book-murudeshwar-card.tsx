@@ -1,6 +1,6 @@
 import { Badge } from "../../shadcn/Badge";
 import CardWrapper from "../card-wrapper";
-import PullRequestIcon from "@/components/lottie-ui/pull-request-icon";
+import GithubIconButton from "../github-icon-button";
 
 const BookMurudeshwarCard = () => {
   return (
@@ -26,7 +26,7 @@ const BookMurudeshwarCard = () => {
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               BookMurudeshwar
             </h1>
-            <PullRequestIcon link="https://murudeshwar.co.in" />
+            <GithubIconButton href="https://github.com/ManojINaik/book-murudeshwar" />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">HTML5</Badge>
