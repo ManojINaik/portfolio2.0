@@ -60,22 +60,37 @@ export const layouts = {
       },
       {
         i: "alliance-dao",
-        x: 0, y: 16, w: 6, h: 7,
+        x: 0, y: 30, w: 6, h: 7,
         isResizable: false,
       },
       {
         i: "station-setup",
-        x: 6, y: 18, w: 6, h: 7,
+        x: 6, y: 32, w: 6, h: 7,
         isResizable: false,
       },
       {
         i: "alliance-landing",
-        x: 0, y: 23, w: 6, h: 7,
+        x: 0, y: 37, w: 6, h: 7,
         isResizable: false,
       },
       {
         i: "developer-landing",
         x: 6, y: 25, w: 6, h: 7,
+        isResizable: false,
+      },
+      {
+        i: "book-murudeshwar",
+        x: 0, y: 16, w: 6, h: 7,
+        isResizable: false,
+      },
+      {
+        i: "rooms-murudeshwar",
+        x: 6, y: 18, w: 6, h: 7,
+        isResizable: false,
+      },
+      {
+        i: "mr-riders",
+        x: 0, y: 23, w: 6, h: 7,
         isResizable: false,
       },
     ],
@@ -137,22 +152,37 @@ export const layouts = {
       },
       {
         i: "alliance-dao",
-        x: 0, y: 30, w: 5, h: 8,
+        x: 0, y: 46, w: 5, h: 8,
         isResizable: false,
       },
       {
         i: "station-setup",
-        x: 5, y: 30, w: 5, h: 8,
+        x: 5, y: 46, w: 5, h: 8,
         isResizable: false,
       },
       {
         i: "alliance-landing",
-        x: 0, y: 38, w: 5, h: 8,
+        x: 0, y: 54, w: 5, h: 8,
         isResizable: false,
       },
       {
         i: "developer-landing",
-        x: 5, y: 38, w: 5, h: 8,
+        x: 5, y: 54, w: 5, h: 8,
+        isResizable: false,
+      },
+      {
+        i: "book-murudeshwar",
+        x: 0, y: 30, w: 5, h: 8,
+        isResizable: false,
+      },
+      {
+        i: "rooms-murudeshwar",
+        x: 5, y: 30, w: 5, h: 8,
+        isResizable: false,
+      },
+      {
+        i: "mr-riders",
+        x: 0, y: 38, w: 5, h: 8,
         isResizable: false,
       },
     ],
@@ -214,22 +244,37 @@ export const layouts = {
       },
       {
         i: "station-setup",
-        x: 0, y: 64, w: 6, h: 10,
+        x: 0, y: 94, w: 6, h: 10,
         isResizable: false,
       },
       {
         i: "alliance-dao",
-        x: 0, y: 74, w: 6, h: 10,
+        x: 0, y: 104, w: 6, h: 10,
         isResizable: false,
       },
       {
         i: "alliance-landing",
-        x: 0, y: 84, w: 6, h: 10,
+        x: 0, y: 114, w: 6, h: 10,
         isResizable: false,
       },
       {
         i: "developer-landing",
-        x: 0, y: 94, w: 6, h: 10,
+        x: 0, y: 124, w: 6, h: 10,
+        isResizable: false,
+      },
+      {
+        i: "book-murudeshwar",
+        x: 0, y: 64, w: 6, h: 10,
+        isResizable: false,
+      },
+      {
+        i: "rooms-murudeshwar",
+        x: 0, y: 74, w: 6, h: 10,
+        isResizable: false,
+      },
+      {
+        i: "mr-riders",
+        x: 0, y: 84, w: 6, h: 10,
         isResizable: false,
       },
     ],
@@ -311,6 +356,21 @@ export const layouts = {
         x: 0, y: 26, w: 6, h: 6,
         isResizable: false,
       },
+      {
+        i: "book-murudeshwar",
+        x: 6, y: 26, w: 6, h: 6,
+        isResizable: false,
+      },
+      {
+        i: "rooms-murudeshwar",
+        x: 0, y: 32, w: 6, h: 6,
+        isResizable: false,
+      },
+      {
+        i: "mr-riders",
+        x: 6, y: 32, w: 6, h: 6,
+        isResizable: false,
+      },
     ],
     md: [
       {
@@ -386,6 +446,21 @@ export const layouts = {
       {
         i: "developer-landing",
         x: 5, y: 38, w: 5, h: 8,
+        isResizable: false,
+      },
+      {
+        i: "book-murudeshwar",
+        x: 0, y: 46, w: 5, h: 8,
+        isResizable: false,
+      },
+      {
+        i: "rooms-murudeshwar",
+        x: 5, y: 46, w: 5, h: 8,
+        isResizable: false,
+      },
+      {
+        i: "mr-riders",
+        x: 0, y: 54, w: 5, h: 8,
         isResizable: false,
       },
     ],
@@ -465,13 +540,28 @@ export const layouts = {
         x: 0, y: 94, w: 6, h: 10,
         isResizable: false,
       },
+      {
+        i: "book-murudeshwar",
+        x: 0, y: 104, w: 6, h: 10,
+        isResizable: false,
+      },
+      {
+        i: "rooms-murudeshwar",
+        x: 0, y: 114, w: 6, h: 10,
+        isResizable: false,
+      },
+      {
+        i: "mr-riders",
+        x: 0, y: 124, w: 6, h: 10,
+        isResizable: false,
+      },
     ],
   },
   work: {
     lg: [
       {
         i: "bio",
-        x: 6, y: 21, w: 6, h: 4,
+        x: 5, y: 34, w: 4, h: 4,
         isResizable: false,
       },
       {
@@ -481,32 +571,32 @@ export const layouts = {
       },
       {
         i: "map",
-        x: 9, y: 25, w: 3, h: 4,
+        x: 9, y: 34, w: 3, h: 4,
         isResizable: false,
       },
       {
         i: "text-marquee",
-        x: 0, y: 29, w: 12, h: 1,
+        x: 0, y: 31, w: 12, h: 1,
         isResizable: false,
       },
       {
         i: "linkedin",
-        x: 0, y: 25, w: 2, h: 2,
+        x: 0, y: 32, w: 2, h: 2,
         isResizable: false,
       },
       {
         i: "github",
-        x: 2, y: 25, w: 2, h: 2,
+        x: 2, y: 32, w: 2, h: 2,
         isResizable: false,
       },
       {
         i: "email",
-        x: 4, y: 25, w: 5, h: 2,
+        x: 4, y: 32, w: 5, h: 2,
         isResizable: false,
       },
       {
         i: "my-stack",
-        x: 4, y: 25, w: 5, h: 4,
+        x: 0, y: 34, w: 5, h: 4,
         isResizable: false,
       },
       {
@@ -544,11 +634,26 @@ export const layouts = {
         x: 0, y: 19, w: 6, h: 6,
         isResizable: false,
       },
+      {
+        i: "book-murudeshwar",
+        x: 6, y: 21, w: 6, h: 6,
+        isResizable: false,
+      },
+      {
+        i: "rooms-murudeshwar",
+        x: 0, y: 25, w: 6, h: 6,
+        isResizable: false,
+      },
+      {
+        i: "mr-riders",
+        x: 6, y: 25, w: 6, h: 6,
+        isResizable: false,
+      },
     ],
     md: [
       {
         i: "bio",
-        x: 5, y: 29, w: 5, h: 6,
+        x: 4, y: 46, w: 4, h: 4,
         isResizable: false,
       },
       {
@@ -558,32 +663,32 @@ export const layouts = {
       },
       {
         i: "map",
-        x: 8, y: 36, w: 2, h: 6,
+        x: 8, y: 46, w: 2, h: 6,
         isResizable: false,
       },
       {
         i: "text-marquee",
-        x: 5, y: 35, w: 5, h: 1,
+        x: 0, y: 45, w: 10, h: 1,
         isResizable: false,
       },
       {
         i: "linkedin",
-        x: 0, y: 36, w: 2, h: 3,
+        x: 0, y: 52, w: 2, h: 3,
         isResizable: false,
       },
       {
         i: "github",
-        x: 2, y: 36, w: 2, h: 3,
+        x: 2, y: 52, w: 2, h: 3,
         isResizable: false,
       },
       {
         i: "email",
-        x: 0, y: 39, w: 4, h: 3,
+        x: 0, y: 55, w: 4, h: 3,
         isResizable: false,
       },
       {
         i: "my-stack",
-        x: 4, y: 36, w: 4, h: 6,
+        x: 0, y: 46, w: 4, h: 4,
         isResizable: false,
       },
       {
@@ -621,11 +726,26 @@ export const layouts = {
         x: 0, y: 28, w: 5, h: 8,
         isResizable: false,
       },
+      {
+        i: "book-murudeshwar",
+        x: 5, y: 29, w: 5, h: 8,
+        isResizable: false,
+      },
+      {
+        i: "rooms-murudeshwar",
+        x: 0, y: 37, w: 5, h: 8,
+        isResizable: false,
+      },
+      {
+        i: "mr-riders",
+        x: 5, y: 37, w: 5, h: 8,
+        isResizable: false,
+      },
     ],
     sm: [
       {
         i: "bio",
-        x: 0, y: 82, w: 4, h: 6,
+        x: 0, y: 131, w: 4, h: 6,
         isResizable: false,
       },
       {
@@ -635,32 +755,32 @@ export const layouts = {
       },
       {
         i: "map",
-        x: 0, y: 100, w: 4, h: 6,
+        x: 0, y: 125, w: 4, h: 6,
         isResizable: false,
       },
       {
         i: "text-marquee",
-        x: 0, y: 81, w: 4, h: 1,
+        x: 0, y: 112, w: 4, h: 1,
         isResizable: false,
       },
       {
         i: "linkedin",
-        x: 0, y: 94, w: 2, h: 3,
+        x: 0, y: 119, w: 2, h: 3,
         isResizable: false,
       },
       {
         i: "github",
-        x: 2, y: 94, w: 2, h: 3,
+        x: 2, y: 119, w: 2, h: 3,
         isResizable: false,
       },
       {
         i: "email",
-        x: 0, y: 97, w: 4, h: 3,
+        x: 0, y: 122, w: 4, h: 3,
         isResizable: false,
       },
       {
         i: "my-stack",
-        x: 0, y: 88, w: 4, h: 6,
+        x: 0, y: 113, w: 4, h: 6,
         isResizable: false,
       },
       {
@@ -696,6 +816,21 @@ export const layouts = {
       {
         i: "developer-landing",
         x: 0, y: 71, w: 4, h: 10,
+        isResizable: false,
+      },
+      {
+        i: "book-murudeshwar",
+        x: 0, y: 81, w: 4, h: 10,
+        isResizable: false,
+      },
+      {
+        i: "rooms-murudeshwar",
+        x: 0, y: 91, w: 4, h: 10,
+        isResizable: false,
+      },
+      {
+        i: "mr-riders",
+        x: 0, y: 101, w: 4, h: 10,
         isResizable: false,
       },
     ],

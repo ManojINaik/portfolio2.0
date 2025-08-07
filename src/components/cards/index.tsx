@@ -13,4 +13,6 @@ export { default as JobsCard } from "./jobs-card";
 export { default as AboutCard } from "./about-card";
 export { default as MyTechCard } from "./tech-card";
 export { default as TextMarqueeCard } from "./text-marquee-card";
-
+export { default as BookMurudeshwarCard } from "./project-cards/book-murudeshwar-card";
+export { default as RoomsMurudeshwarCard } from "./project-cards/rooms-murudeshwar-card";
+export { default as MrRidersCard } from "./project-cards/mr-riders-card";

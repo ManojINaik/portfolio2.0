@@ -25,7 +25,10 @@ import {
 	IPCaptureCard,
 	ManimAnimationAgentCard,
 	EchoVerseAICard,
-	BoltHackathonCard
+	BoltHackathonCard,
+  BookMurudeshwarCard
+  , RoomsMurudeshwarCard
+  , MrRidersCard
 } from "@/components/cards";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
@@ -243,10 +246,43 @@ const Grid = () => {
 							<FarmersGatewayCard />
 						</BlurFade>
 					</div>
-				</ResponsiveGridLayout>
-			</div>
-		</>
-	);
+				<div
+					key="book-murudeshwar"
+					className={cn(styles.itemGrab, styles.item)}
+					style={{
+						transitionDuration: isMounted ? "700ms" : "0ms"
+					}}
+				>
+					<BlurFade delay={0.80}>
+						<BookMurudeshwarCard />
+					</BlurFade>
+				</div>
+				<div
+					key="rooms-murudeshwar"
+					className={cn(styles.itemGrab, styles.item)}
+					style={{
+						transitionDuration: isMounted ? "700ms" : "0ms"
+					}}
+				>
+					<BlurFade delay={0.85}>
+						<RoomsMurudeshwarCard />
+					</BlurFade>
+				</div>
+				<div
+					key="mr-riders"
+					className={cn(styles.itemGrab, styles.item)}
+					style={{
+						transitionDuration: isMounted ? "700ms" : "0ms"
+					}}
+				>
+					<BlurFade delay={0.90}>
+						<MrRidersCard />
+					</BlurFade>
+				</div>
+			</ResponsiveGridLayout>
+		</div>
+	</>
+);
 };
 
 export default Grid;
