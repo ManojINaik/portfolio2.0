@@ -26,7 +26,7 @@ const MrRidersCard = () => {
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               Mr Riders
             </h1>
-            <GithubIconButton href="https://github.com/ManojINaik/mr-riders" />
+            <GithubIconButton href="https://github.com/ManojINaik/MRriders/tree/main/vue-app" />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">Vue 3</Badge>

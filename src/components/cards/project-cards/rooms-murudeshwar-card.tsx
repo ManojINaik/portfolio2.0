@@ -26,7 +26,7 @@ const RoomsMurudeshwarCard = () => {
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               Rooms Murudeshwar
             </h1>
-            <GithubIconButton href="https://github.com/ManojINaik/rooms-murudeshwar" />
+            <GithubIconButton href="https://rooms.murudeshwar.co.in" />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">HTML5</Badge>

@@ -26,7 +26,7 @@ const EchoVerseAICard = () => {
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               EchoVerse AI Hub
             </h1>
-            <GithubIconButton href="https://github.com/ManojINaik/echoverse-ai" />
+            <GithubIconButton href="https://github.com/ManojINaik/bolthackathon2" />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">

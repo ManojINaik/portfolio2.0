@@ -30,7 +30,7 @@ const BoltHackathonCard = () => {
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               Bolt.new UI Generator
             </h1>
-            <GithubIconButton href="https://github.com/ManojINaik/bolt-ui-generator" />
+            <GithubIconButton href="https://github.com/ManojINaik/bolthackthon" />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">
